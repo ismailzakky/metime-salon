@@ -1,0 +1,123 @@
+
+
+entity Salon {
+	id String
+    creationDate LocalDate
+    isActive Boolean
+    manager String
+    mediaFile String
+    owner String
+}
+
+entity Service {
+	id String
+    isActive Boolean
+    mediaFile String
+    price Long
+    serviceName String
+}
+
+entity PeopleInformation {
+	id String 
+    firstName String
+    lastName String
+    gender Gender
+    contactNumber Long
+    identityNumber String
+    identityType IdentityType
+}
+
+entity PlaceInformation {
+	id String
+    address String
+    location String
+    city String
+    phone Long
+    zipCode Integer
+}
+
+enum Gender {
+	MALE,FEMALE
+}
+
+enum IdentityType {
+	KTP,SIM
+}
+
+
+entity BusinessInformation {
+	id String
+ 	serviceType ServiceType
+    speciality Speciality
+}
+
+enum ServiceType {
+	BEAUTY_SALON,NAIL_ART
+}
+
+enum Speciality {
+	HAIR_COLORING,NAIL_COLORING,PEDICURE
+}
+
+entity CreationalDate {
+	id String
+	createdAt LocalDate
+    createdBy String
+    modifiedAt LocalDate
+    modifiedBy String
+}
+
+
+entity Stylish {
+	id String
+    mediaFile String
+}
+
+entity WorkingTime{
+	id String
+    isActive Boolean
+    workingDay WorkingDay
+}
+
+enum WorkingDay{
+	SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY
+}
+
+entity TimePeriod {
+	id String
+	endHour LocalDate
+    startHour LocalDate
+}
+
+entity MasterPiece {
+	id String
+    gender Gender
+    mediaFile String
+    propertyName String
+}
+
+relationship OneToOne{
+	Salon{bussinessInformation} to BusinessInformation,
+    Salon{creationalDate} to CreationalDate,
+    Salon{placeInformation} to PlaceInformation,
+    Service{creationalDate} to CreationalDate,
+    WorkingTime{timePeriod} to TimePeriod,
+    Stylish{creationalDate} to CreationalDate,
+    Stylish{peopleInformation} to PeopleInformation,
+    Stylish{creationalDate} to CreationalDate,
+    Stylish{placeInformation} to PlaceInformation,
+    Stylish{workingTime} to WorkingTime,
+    MasterPiece{creationalDate} to CreationalDate
+}
+
+relationship OneToMany{
+	Salon{service} to Service,
+    Salon{stylish} to Stylish,
+    Salon{workingTime} to WorkingTime,
+    Stylish{masterpiece} to MasterPiece
+}
+
+paginate Salon, Stylish with pagination
+service all with serviceImpl
+
+

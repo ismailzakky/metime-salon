@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "salon",
+            "otherEntityName": "salon",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "timePeriod",
+            "otherEntityName": "timePeriod",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "workingTime"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "isActive",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "workingDay",
+            "fieldType": "WorkingDay",
+            "fieldValues": "SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY"
+        }
+    ],
+    "changelogDate": "20170924133503",
+    "entityTableName": "working_time",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

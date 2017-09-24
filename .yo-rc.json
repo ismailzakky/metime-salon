@@ -1,0 +1,34 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.cus.metime.salon"
+    },
+    "jhipsterVersion": "4.8.2",
+    "baseName": "salon",
+    "packageName": "com.cus.metime.salon",
+    "packageFolder": "com/cus/metime/salon",
+    "serverPort": "9903",
+    "authenticationType": "uaa",
+    "uaaBaseName": "uaa",
+    "hibernateCache": "no",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "987d8d04b0d753d42f1a323686d52b43cd2f47bf",
+    "enableTranslation": false,
+    "applicationType": "microservice",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "skipClient": true,
+    "skipUserManagement": true,
+    "clientPackageManager": "yarn"
+  }
+}

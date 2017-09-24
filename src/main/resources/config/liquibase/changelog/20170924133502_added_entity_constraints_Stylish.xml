@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Stylish.
+    -->
+    <changeSet id="20170924133502-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="salon_id"
+                                 baseTableName="stylish"
+                                 constraintName="fk_stylish_salon_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="salon"/>
+
+        <addForeignKeyConstraint baseColumnNames="creational_date_id"
+                                 baseTableName="stylish"
+                                 constraintName="fk_stylish_creational_date_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="creational_date"/>
+
+        <addForeignKeyConstraint baseColumnNames="people_information_id"
+                                 baseTableName="stylish"
+                                 constraintName="fk_stylish_people_information_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="people_information"/>
+
+        <addForeignKeyConstraint baseColumnNames="place_information_id"
+                                 baseTableName="stylish"
+                                 constraintName="fk_stylish_place_information_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="place_information"/>
+
+        <addForeignKeyConstraint baseColumnNames="working_time_id"
+                                 baseTableName="stylish"
+                                 constraintName="fk_stylish_working_time_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="working_time"/>
+
+    </changeSet>
+</databaseChangeLog>

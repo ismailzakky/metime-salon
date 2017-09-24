@@ -1,0 +1,42 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "salon",
+            "otherEntityName": "salon",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "creationalDate",
+            "otherEntityName": "creationalDate",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "service"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "isActive",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "mediaFile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "serviceName",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170924133457",
+    "entityTableName": "service",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

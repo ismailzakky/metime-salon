@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "createdAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifiedAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170924133501",
+    "entityTableName": "creational_date",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

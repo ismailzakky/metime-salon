@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "Gender",
+            "fieldValues": "MALE,FEMALE"
+        },
+        {
+            "fieldName": "contactNumber",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "identityNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "identityType",
+            "fieldType": "IdentityType",
+            "fieldValues": "KTP,SIM"
+        }
+    ],
+    "changelogDate": "20170924133458",
+    "entityTableName": "people_information",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

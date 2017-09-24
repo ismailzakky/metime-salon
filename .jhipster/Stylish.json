@@ -1,0 +1,60 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "salon",
+            "otherEntityName": "salon",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "creationalDate",
+            "otherEntityName": "creationalDate",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "stylish"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "peopleInformation",
+            "otherEntityName": "peopleInformation",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "stylish"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "placeInformation",
+            "otherEntityName": "placeInformation",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "stylish"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "workingTime",
+            "otherEntityName": "workingTime",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "stylish"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "masterpiece",
+            "otherEntityName": "masterPiece",
+            "otherEntityRelationshipName": "stylish"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "mediaFile",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170924133502",
+    "entityTableName": "stylish",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl"
+}

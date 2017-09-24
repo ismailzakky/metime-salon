@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phone",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "zipCode",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20170924133459",
+    "entityTableName": "place_information",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

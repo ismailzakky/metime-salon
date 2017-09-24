@@ -1,0 +1,21 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "serviceType",
+            "fieldType": "ServiceType",
+            "fieldValues": "BEAUTY_SALON,NAIL_ART"
+        },
+        {
+            "fieldName": "speciality",
+            "fieldType": "Speciality",
+            "fieldValues": "HAIR_COLORING,NAIL_COLORING,PEDICURE"
+        }
+    ],
+    "changelogDate": "20170924133500",
+    "entityTableName": "business_information",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

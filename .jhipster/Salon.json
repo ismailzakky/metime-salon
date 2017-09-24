@@ -1,0 +1,74 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "bussinessInformation",
+            "otherEntityName": "businessInformation",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "creationalDate",
+            "otherEntityName": "creationalDate",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "placeInformation",
+            "otherEntityName": "placeInformation",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "service",
+            "otherEntityName": "service",
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "stylish",
+            "otherEntityName": "stylish",
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "workingTime",
+            "otherEntityName": "workingTime",
+            "otherEntityRelationshipName": "salon"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "creationDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "isActive",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "manager",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mediaFile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "owner",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170924133456",
+    "entityTableName": "salon",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl"
+}
